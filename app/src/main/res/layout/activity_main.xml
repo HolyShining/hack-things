@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="150dp"
+            tools:context="com.deltaslash.myapplication.MapsActivity" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/button5"
+            android:layout_below="@+id/button5"
+            android:layout_marginTop="21dp"
+            android:text="Point"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/button5"
+            android:layout_alignTop="@+id/map"
+            android:text="Point"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/map"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="63dp"
+            android:layout_toEndOf="@+id/map"
+            android:text="Point"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/map"
+            android:layout_alignStart="@+id/button5"
+            android:text="Point"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:typeface="normal" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignStart="@+id/map"
+            android:layout_below="@+id/map"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="46dp"
+            android:src="@drawable/gerb" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageButton3"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ukr" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_toEndOf="@+id/imageButton2"
+            android:src="@drawable/eng" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="41dp"
+            android:text="Touristic Guide Screen"
+            android:textSize="24sp"
+            android:typeface="normal" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
+
